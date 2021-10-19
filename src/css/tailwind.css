@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#timerOptions input[type="radio"]:checked + label {
+  background-color: #5d165d;
+}
