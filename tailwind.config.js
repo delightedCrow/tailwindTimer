@@ -1,9 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './*.html'
-  ],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./*.html'],
   theme: {
     screens: {
       'xs': '450px',
@@ -31,6 +27,7 @@ module.exports = {
         'overpass-mono': ['"Overpass Mono"', 'monospace']
       },
       colors: {
+        current: 'currentColor',
         'warm-black': '#131313',
         'deep-purple': '#18171A',
         'mid-gray': '#2D2D2D',
@@ -38,9 +35,6 @@ module.exports = {
         'salmon': '#CD5561'
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
